@@ -2,6 +2,8 @@ const rollup = require('rollup');
 const babel = require('rollup-plugin-babel');
 const uglify = require('rollup-plugin-uglify');
 
+const definition = require("../package.json");
+
 const babel_configuration = () => babel({
 	babelrc: false,
 	presets: ["es2015-rollup"],
@@ -13,8 +15,10 @@ const bundles = [
 	{
 		input: "index.js",
 		output: {
-			file: 'build/culori.scales.js',
+			extend: true,
+			file: `build/${definition.name}.js`,
 			format: 'umd',
+			globals: Object.keys(definition.dependencies || {}).reduce((p, v) => (p[v] = "culori", p), {}),
 			name: 'culori',
 		},
 		plugins: [ babel_configuration() ]
@@ -24,8 +28,10 @@ const bundles = [
 	{
 		input: "index.js",
 		output: {
-			file: 'build/culori.scales.min.js',
+			extend: true,
+			file: `build/${definition.name}.min.js`,
 			format: 'umd',
+			globals: Object.keys(definition.dependencies || {}).reduce((p, v) => (p[v] = "culori", p), {}),
 			name: 'culori',
 		},
 		plugins: [ babel_configuration(), uglify() ]

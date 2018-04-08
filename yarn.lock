@@ -512,6 +512,10 @@ core-js@^2.4.0, core-js@^2.5.0:
   version "2.5.4"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.4.tgz#f2c8bf181f2a80b92f360121429ce63a2f0aeae0"
 
+culori@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/culori/-/culori-0.3.1.tgz#874cfcb3f6f7e6c7e34be205ddf8d0bf44026753"
+
 date-time@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/date-time/-/date-time-2.1.0.tgz#0286d1b4c769633b3ca13e1e62558d2dbdc2eba2"
