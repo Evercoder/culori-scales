@@ -1,6 +1,6 @@
 {
   "name": "culori-scales",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "build/culori.scales.js",
   "module": "build/index.js",
   "jsnext:main": "build/index.js",
@@ -18,5 +18,8 @@
   "scripts": {
     "build": "node scripts/build.js",
     "prepublishOnly": "yarn build"
+  },
+  "dependencies": {
+    "culori": "^0.3.1"
   }
 }
