@@ -4,9 +4,19 @@ import scalesPerceptualRainbow from './scales/perceptualRainbow';
 
 import schemesColorbrewer from './schemes/colorbrewer';
 
-export default {
+let scales = Object.assign(
+	{}, 
 	scalesColorbrewer,
 	scalesMpl,
-	scalesPerceptualRainbow,
+	scalesPerceptualRainbow
+);
+
+let schemes = Object.assign(
+	{},
 	schemesColorbrewer
+);
+
+export default {
+	scales,
+	schemes
 };
