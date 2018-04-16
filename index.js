@@ -18,7 +18,13 @@ let schemes = Object.assign(
 	schemesColorbrewer
 );
 
-export default {
+let api = {
+	scales, 
+	themes
+};
+
+export {
+	api as default,
 	scales,
 	schemes
 };
