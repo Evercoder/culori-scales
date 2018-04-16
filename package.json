@@ -1,12 +1,15 @@
 {
   "name": "culori-scales",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "build/culori-scales.js",
   "module": "build/index.js",
   "jsnext:main": "build/index.js",
   "repository": "git@github.com:danburzo/culori-scales.git",
   "author": "Dan Burzo <danburzo@gmail.com>",
   "license": "MIT",
+  "files": [
+    "build"
+  ],
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
