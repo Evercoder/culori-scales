@@ -20,11 +20,7 @@ let schemes = Object.assign(
 
 let api = {
 	scales, 
-	themes
-};
-
-export {
-	api as default,
-	scales,
 	schemes
 };
+
+export default api;
