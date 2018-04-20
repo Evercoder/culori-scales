@@ -1,5 +1,7 @@
 # culori-scales
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/danburzo/culori-scales.svg)](https://greenkeeper.io/)
+
 Color scales for [Culori](https://github.com/danburzo/culori).
 
 ## What's included
